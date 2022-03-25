@@ -35,7 +35,6 @@ a.image {
     min-height: 16rem;
     background-color: transparent;
     border-radius: .5rem;
-    /* z-index: 3; */
     transition: 300ms ease-out;
     display: block;
     position: absolute;
@@ -62,4 +61,20 @@ a.image:hover>.overlay {
 
 a.image:hover>svg.eye {
     opacity: 1;
+}
+
+h1 {
+    font-size: 1.3rem;
+    margin: 1.125rem auto;
+}
+
+a.title:link,
+a.title:visited {
+    color: white;
+    transition: 300ms ease-out;
+}
+
+a.title:hover,
+a.title:active {
+    color: hsl(180, 98%, 52%);
 }
