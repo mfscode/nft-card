@@ -7,18 +7,24 @@
     padding: 0;
 }
 
-p {
-    font-size: 0.875rem;
-    color: hsl(214, 30%, 64%);
-    margin-bottom: 1.125rem;
-}
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: hsl(217, 54%, 11%);
     min-height: 100vh;
+}
+
+p {
+    font-size: 0.875rem;
+    color: hsl(214, 30%, 64%);
+    margin-bottom: 1.125rem;
+}
+
+a:link,
+a:visited {
+    color: white;
+    transition: 300ms ease-out;
 }
 
 .card {
@@ -72,12 +78,6 @@ a.image:hover>svg.eye {
 h1 {
     font-size: 1.3rem;
     margin: 1.125rem auto;
-}
-
-a.title:link,
-a.title:visited {
-    color: white;
-    transition: 300ms ease-out;
 }
 
 a.title:hover,
