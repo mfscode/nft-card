@@ -2,6 +2,9 @@
 * {
     font-family: 'Outfit', sans-serif;
     box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -9,10 +12,36 @@ body {
     justify-content: center;
     align-items: center;
     background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
 }
 
 .card {
     background-image: linear-gradient(60deg, hsl(214, 52%, 16%), hsl(213, 49%, 16%));
     width: 20rem;
     min-height: 32.1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+a.image {
+    max-width: 16rem;
+    min-height: 100%;
+    border-radius: .5rem;
+}
+
+.overlay {
+    max-width: 16rem;
+    min-height: 100%;
+    background-color: transparent;
+    z-index: 3;
+    transition: 300ms ease-out;
+}
+
+#nft {
+    max-width: 16rem;
+    border-radius: .5rem;
+}
+
+#nft:hover>.overlay {
+    background-color: hsl(190, 82%, 59%);
 }
