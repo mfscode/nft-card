@@ -8,8 +8,9 @@
 }
 
 p {
-    font-size: 1.125rem;
+    font-size: 0.875rem;
     color: hsl(214, 30%, 64%);
+    margin-bottom: 1.125rem;
 }
 
 body {
