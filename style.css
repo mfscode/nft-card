@@ -21,20 +21,25 @@ body {
     min-height: 32.1rem;
     padding: 2rem;
     border-radius: 1rem;
+    position: relative;
 }
 
 a.image {
     max-width: 16rem;
     min-height: 100%;
-    border-radius: .5rem;
+    position: relative;
 }
 
 .overlay {
-    max-width: 16rem;
-    min-height: 100%;
+    min-width: 16rem;
+    min-height: 16rem;
     background-color: transparent;
-    z-index: 3;
+    border-radius: .5rem;
+    /* z-index: 3; */
     transition: 300ms ease-out;
+    display: block;
+    position: absolute;
+    top: -1200%;
 }
 
 #nft {
@@ -42,6 +47,19 @@ a.image {
     border-radius: .5rem;
 }
 
-#nft:hover>.overlay {
-    background-color: hsl(190, 82%, 59%);
+svg.eye {
+    position: absolute;
+    display: block;
+    top: -600%;
+    left: 40%;
+    opacity: 0;
+    transition: 200ms ease-out;
+}
+
+a.image:hover>.overlay {
+    background-color: hsl(190, 82%, 59%, .5);
+}
+
+a.image:hover>svg.eye {
+    opacity: 1;
 }
